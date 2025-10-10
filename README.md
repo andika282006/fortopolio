@@ -1,2 +1,2 @@
 # fortopolio
-<img src="images/fotoku.1.jpg" alt="Fotoku" width="250" style="border-radius: 15px;">
+![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.1.jpg?raw=true)
