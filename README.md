@@ -1,2 +1,13 @@
 # fortopolio
 ![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.1.jpg?raw=true)
+![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.2.jpg?raw=true)
+![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.3.jpg?raw=true)
+![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.4.jpg?raw=true)
+![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.5.jpg?raw=true)
+![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.6.jpg?raw=true)
+![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.7.jpg?raw=true)
+![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.8.jpg?raw=true)
+![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.9.jpg?raw=true)
+![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.10.jpg?raw=true)
+![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.11.jpg?raw=true)
+![alt teks](https://github.com/andika282006/fortopolio/blob/main/fotoku.12.jpg?raw=true)
