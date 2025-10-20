@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Sayangku ❤️ | Maaf dari Hatiku</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            padding: 20px;
+            position: relative;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .header {
+            margin: 20px 0 30px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+
+        .heart {
+            color: #ff6b6b;
+            animation: heartbeat 1.5s ease infinite;
+            display: inline-block;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Prambanan Temple Styles */
+        .temple-container {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .temple-base {
+            position: absolute;
+            width: 90%;
+            height: 30px;
+            background: linear-gradient(to bottom, #8B7355, #6B5B3C);
+            border-radius: 5px;
+            bottom: 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-temple {
+            position: relative;
+            width: 180px;
+            height: 280px;
+            margin: 0 20px;
+        }
+
+        .temple-body {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #C4A77D, #A68A5D);
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .temple-roof {
+            position: absolute;
+            width: 100%;
+            height: 80px;
+            background: linear-gradient(45deg, #8B7355, #6B5B3C);
+            top: -40px;
+            border-radius: 50% 50% 0 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .roof-tier {
+            width: 80%;
+            height: 20px;
+            background: linear-gradient(45deg, #A68A5D, #8B7355);
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+
+        .roof-tier:nth-child(1) { width: 90%; }
+        .roof-tier:nth-child(2) { width: 80%; }
+        .roof-tier:nth-child(3) { width: 70%; }
+        .roof-tier:nth-child(4) { width: 60%; }
+
+        .temple-door {
+            position: absolute;
+            width: 50px;
+            height: 80px;
+            background: linear-gradient(45deg, #5D4037, #3E2723);
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px 5px 0 0;
+        }
+
+        .side-temple {
+            position: relative;
+            width: 120px;
+            height: 200px;
+            margin: 0 10px;
+        }
+
+        .side-temple .temple-body {
+            height: 85%;
+        }
+
+        .side-temple .temple-roof {
+            height: 60px;
+            top: -30px;
+        }
+
+        /* Message Section */
+        .message-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: left;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .message-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #FFD700;
+        }
+
+        .message-box p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        /* Action Buttons */
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-forgive {
+            background: linear-gradient(45deg, #FF6B6B, #FF8E8E);
+            color: white;
+        }
+
+        .btn-later {
+            background: rgba(255, 255, 255, 0.9);
+            color: #667eea;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Memory Section */
+        .memories {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .memories h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            color: #FFD700;
+        }
+
+        .memory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .memory-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .memory-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .memory-item i {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+
+        /* Hidden Messages */
+        .hidden-message {
+            display: none;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 30px 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            animation: fadeIn 1s ease;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hidden-message h2 {
+            color: #FFD700;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+
+        .hidden-message p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .love-letter {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 15px;
+            border-left: 5px solid #FFD700;
+            text-align: left;
+            font-style: italic;
+        }
+
+        /* Decorative Elements */
+        .moon {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: radial-gradient(circle, #FFF9C4, #FFD700);
+            border-radius: 50%;
+            top: 30px;
+            right: 30px;
+            box-shadow: 0 0 30px #FFD700;
+            z-index: -1;
+        }
+
+        .stars {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.2; }
+            50% { opacity: 1; }
+            100% { opacity: 0.2; }
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .temple-container {
+                height: 280px;
+            }
+            
+            .main-temple {
+                width: 140px;
+                height: 220px;
+                margin: 0 10px;
+            }
+            
+            .side-temple {
+                width: 90px;
+                height: 160px;
+                margin: 0 5px;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            
+            .memory-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7rem;
+            }
+            
+            .temple-container {
+                height: 220px;
+                flex-wrap: wrap;
+            }
+            
+            .main-temple {
+                width: 120px;
+                height: 180px;
+            }
+            
+            .side-temple {
+                width: 80px;
+                height: 140px;
+            }
+            
+            .actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+                justify-content: center;
+            }
+            
+            .memory-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Decorative Elements -->
+    <div class="moon"></div>
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Untuk <span class="heart">❤️</span> kamuuu <span class="heart">❤️</span></h1>
+            <p class="subtitle">Seperti Candi Prambanan yang Abadi, aku gatau ini candi atau piscok </p>
+            <p class="subtitle">💫 Maafkan Aku 💫</p>
+        </div>
+
+        <!-- Prambanan Temple -->
+        <div class="temple-container">
+            <div class="side-temple">
+                <div class="temple-body"></div>
+                <div class="temple-roof">
+                    <div class="roof-tier"></div>
+                    <div class="roof-tier"></div>
+                    <div class="roof-tier"></div>
+                </div>
+                <div class="temple-door"></div>
+            </div>
+            
+            <div class="main-temple">
+                <div class="temple-body"></div>
+                <div class="temple-roof">
+                    <div class="roof-tier"></div>
+                    <div class="roof-tier"></div>
+                    <div class="roof-tier"></div>
+                    <div class="roof-tier"></div>
+                </div>
+                <div class="temple-door"></div>
+            </div>
+            
+            <div class="side-temple">
+                <div class="temple-body"></div>
+                <div class="temple-roof">
+                    <div class="roof-tier"></div>
+                    <div class="roof-tier"></div>
+                    <div class="roof-tier"></div>
+                </div>
+                <div class="temple-door"></div>
+            </div>
+            
+            <div class="temple-base"></div>
+        </div>
+
+        <div class="message-box">
+            <h2>Dengan Tulus dari rasa maafkuu</h2>
+            <p>kamuu, seperti Candi Prambanan yang tetap berdiri megah meski diterpa zaman, <span class="highlight">untukmuu</span> takkan pernah goyah oleh badai masalah sekalipun.</p>
+            <p>Aku menyadari kesalahanku yang telah menyakiti hatimu. Kata-kata yang terucap tanpa pikir, sikapku yang egois - dan hilapku yang tak pantas.</p>
+            <p>Dengan <span class="highlight">ketulusan hati</span>, aku mohon maaf. Bukan karena terpaksa, tapi karena aku tak ingin kehilangan cahaya hidupku - kamu.</p>
+            <p>Izinkan aku memperbaiki segala kesalahan dan membangun kembali kepercayaan kita, bagai arsitek yang membangun candi dengan penuh kesabaran dan ketelitian.</p>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-forgive" onclick="showForgiveMessage()">
+                <i class="fas fa-heart"></i> Aku Maafkan Kamu
+            </button>
+            <button class="btn btn-later" onclick="showLaterMessage()">
+                <i class="fas fa-clock"></i> Beri Aku Waktu
+            </button>
+        </div>
+
+        <div class="memories">
+            <h2>Kenangan Manis Kita</h2>
+            <div class="memory-grid">
+                <div class="memory-item">
+                    <i class="fas fa-laugh-beam"></i>
+                    <p>Tawa Bahagia</p>
+                </div>
+                <div class="memory-item">
+                    <i class="fas fa-hands-holding-heart"></i>
+                    <p>Kebersamaan</p>
+                </div>
+                <div class="memory-item">
+                    <i class="fas fa-heart"></i>
+                    <p>Kasih Sayang</p>
+                </div>
+                <div class="memory-item">
+                    <i class="fas fa-star"></i>
+                    <p>Momen Spesial</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="forgiveMessage" class="hidden-message">
+            <h2>Terima Kasih Sayang! <span class="heart">❤️</span></h2>
+            <p>Aku sangat berterima kasih kamu mau membuka hati dan memaafkanku. Aku janji akan menjadi pribadi yang lebih baik untuk kita.</p>
+            <div class="love-letter">
+                <p>"Bagai Candi Prambanan yang megah berdiri,</p>
+                <p>Cintaku padamu abadi sepanjang masa.</p>
+                <p>Maafkan segala khilaf dan salah sangka,</p>
+                <p>Karena kaulah cahaya dalam hidupku."</p>
+            </div>
+            <button class="btn btn-forgive" onclick="closeMessage()">
+                <i class="fas fa-heart"></i> Aku Cinta Kamu
+            </button>
+        </div>
+
+        <div id="laterMessage" class="hidden-message">
+            <h2>Aku Mengerti <span class="heart">❤️</span></h2>
+            <p>Aku menghormati keputusanmu untuk butuh waktu. Aku akan menunggu dengan sabar dan tulus.</p>
+            <p>Sambil menunggu, aku akan terus berbenah diri dan membuktikan bahwa aku layak mendapatkan maafmu.</p>
+            <button class="btn btn-forgive" onclick="closeMessage()">
+                <i class="fas fa-clock"></i> Aku Akan Menunggu
+            </button>
+        </div>
+
+        <footer>
+            <p>Dibuat dengan <span class="heart">❤️</span> tulus untuk seseorang yang sangat berarti</p>
+            <p>DIKAA - Sebuah Permintaan Maaf dari Hati yang Tulus</p>
+        </footer>
+    </div>
+
+    <script>
+        // Create stars
+        function createStars() {
+            const starsContainer = document.getElementById('stars');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.width = Math.random() * 3 + 'px';
+                star.style.height = star.style.width;
+                star.style.left = Math.random() * 100 + 'vw';
+                star.style.top = Math.random() * 100 + 'vh';
+                star.style.animationDelay = Math.random() * 3 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        function showForgiveMessage() {
+            document.getElementById('forgiveMessage').style.display = 'block';
+            document.getElementById('laterMessage').style.display = 'none';
+            
+            // Add celebration effect
+            celebrate();
+        }
+
+        function showLaterMessage() {
+            document.getElementById('laterMessage').style.display = 'block';
+            document.getElementById('forgiveMessage').style.display = 'none';
+        }
+
+        function closeMessage() {
+            document.getElementById('forgiveMessage').style.display = 'none';
+            document.getElementById('laterMessage').style.display = 'none';
+        }
+
+        function celebrate() {
+            // Create floating hearts
+            for (let i = 0; i < 25; i++) {
+                createHeart();
+            }
+        }
+
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '❤️';
+            heart.style.position = 'fixed';
+            heart.style.fontSize = Math.random() * 25 + 15 + 'px';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.top = '100vh';
+            heart.style.opacity = '0.8';
+            heart.style.zIndex = '9999';
+            heart.style.pointerEvents = 'none';
+            document.body.appendChild(heart);
+
+            // Animate heart
+            const animation = heart.animate([
+                { transform: 'translateY(0) rotate(0deg)', opacity: 0.8 },
+                { transform: `translateY(-${Math.random() * 100 + 100}vh) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+            ], {
+                duration: Math.random() * 3000 + 2000,
+                easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+            });
+
+            animation.onfinish = () => {
+                heart.remove();
+            };
+        }
+
+        // Add interactive temple elements
+        document.querySelectorAll('.temple-body').forEach(temple => {
+            temple.addEventListener('click', function() {
+                this.style.transform = 'scale(1.05)';
+                this.style.transition = 'all 0.3s ease';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 300);
+            });
+        });
+
+        // Initialize stars when page loads
+        window.addEventListener('load', createStars);
+    </script>
+</body>
+</html>
